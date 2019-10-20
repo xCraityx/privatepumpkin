@@ -25,8 +25,8 @@ var hamster_data = {
         "walk3": [25, 29]
     },
 
-    scaleX: .5, //90 big hamster | 5 normal critter
-    scaleY: .5, //90 big hamster | 5 normal critter
+    scaleX: .20, //90 big hamster | 5 normal critter
+    scaleY: .20, //90 big hamster | 5 normal critter
     regX: 45,
     regY: 100,
     framerate: 24,
