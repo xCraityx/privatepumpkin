@@ -29,7 +29,7 @@ function GetPlayer(nickname) {
 var folder = path.join(global.appDir,"./rooms/");
 console.log("ROOMS:",folder)
 var roomIds = [
-    "plaza"
+    "tavern"
 ]
 
 
