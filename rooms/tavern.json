@@ -1,15 +1,15 @@
 {
-    "name": "Tavern",
+    "name": "Plaza",
     "width": 850,
     "height": 480,
     "margin": 0,
     "minDistance": 20,
     "artwork": {
-        "background": "HamTavern_BG.png",
-        "foreground": "HamTavern_FG.png",
+        "background": "room.png",
+        "foreground": "",
         "sprites": {
             "images": [
-                "HamTavern_SM.png"
+                ""
             ],
             "frames": [
                 [
