@@ -29,15 +29,8 @@ function GetPlayer(nickname) {
 var folder = path.join(global.appDir,"./rooms/");
 console.log("ROOMS:",folder)
 var roomIds = [
-    "tavern"
+    "plaza"
 ]
-
-function GetHoliday() {
-    if(new Date().getMonth()==9) {
-        return "halloween";
-    }
-    return undefined;
-}
  
 async function SaveNewRoom(id) {
     var name = id;
