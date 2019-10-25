@@ -31,7 +31,13 @@ console.log("ROOMS:",folder)
 var roomIds = [
     "plaza"
 ]
-
+ 
+async function SaveNewRoom(id) {
+    var name = id;
+    var data = await ReadJSON(folder + name + ".json");
+    var room = new Room(id,data);
+    rooms.push(room);
+}
 
 function InitRooms() {
     roomIds.forEach(roomId=>{
