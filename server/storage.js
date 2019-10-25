@@ -34,7 +34,7 @@ var roomIds = [
 
 function GetHoliday() {
     if(new Date().getMonth()==9) {
-        return undefined;
+        return "";
     }
     return undefined;
 }
