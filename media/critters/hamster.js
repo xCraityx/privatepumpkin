@@ -1,5 +1,5 @@
 var hamster_data = {
-    images: ["hamster.png"],
+    images: ["pumpkin.png"],
     frames: [[2, 2, 90, 120], [92, 2, 90, 120], [182, 2, 90, 120], [272, 2, 90, 120], [362, 2, 90, 120],
                  [2, 122, 90, 120], [92, 122, 90, 120], [182, 122, 90, 120], [272, 122, 90, 120], [362, 122, 90, 120],
                  [2, 242, 90, 120], [92, 242, 90, 120], [182, 242, 90, 120], [272, 242, 90, 120], [362, 242, 90, 120],
@@ -36,5 +36,5 @@ var hamster_data = {
 
 var settings = {
     character: hamster_data,
-    roomPath: 'https://boxcritters.herokuapp.com/media/rooms/'
+    roomPath: './media/rooms/'
 };
