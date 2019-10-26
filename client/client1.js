@@ -76,7 +76,7 @@ function createBalloon(t, o) {
     var e = o + 20,
         r = t + 20,
         a = new createjs.Shape;
-    return a.graphics.setStrokeStyle(1).beginStroke("#888888").beginFill("#FFFFFF"), a.graphics.moveTo(5, 0).arcTo(r, 0, r, 5, 5).arcTo(r, e, r - 5, e, 5).lineTo(80, e).lineTo(70, e + 10).lineTo(70, e).arcTo(0, e, 0, e - 5, 5).arcTo(0, 0, 5, 0, 5), a.x = 0 - r / 2, a.y = -10, a
+    return a.graphics.setStrokeStyle(1).beginStroke("#c27f04").beginFill("#ffa500"), a.graphics.moveTo(5, 0).arcTo(r, 0, r, 5, 5).arcTo(r, e, r - 5, e, 5).lineTo(80, e).lineTo(70, e + 10).lineTo(70, e).arcTo(0, e, 0, e - 5, 5).arcTo(0, 0, 5, 0, 5), a.x = 0 - r / 2, a.y = -10, a
 }
 
 function World(r, t, o) {
