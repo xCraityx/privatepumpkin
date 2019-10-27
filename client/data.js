@@ -36,5 +36,5 @@ var hamster_data = {
 
 var settings = {
     character: hamster_data,
-    roomPath: './media/rooms/'
+    roomPath: './media/critters/'
 };
