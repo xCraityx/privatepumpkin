@@ -160,7 +160,7 @@ Room.prototype.sortDepth = function() {
     }), o.on("R", function(t) {
         console.info("Left room: ", t), e.room.removePlayer(t)
     }), o.on("P", function(t) {
-        //console.info("P", t), e.room.movePlayer(t)
+        return
     }), o.on("M", function(t) {
         console.info(n + ": " + t), e.room.addBalloon(t)
     })
