@@ -25,8 +25,8 @@ var hamster_data = {
         "walk3": [25, 29]
     },
 
-    scaleX: .5,
-    scaleY: .5,
+    scaleX: .20,
+    scaleY: .20,
     regX: 45,
     regY: 100,
     framerate: 24,
@@ -36,5 +36,5 @@ var hamster_data = {
 
 var settings = {
     character: hamster_data,
-    roomPath: './media/critters/'
+    roomPath: 'https://fl1nns.github.io/pumkinparadise/media/critters/'
 };
