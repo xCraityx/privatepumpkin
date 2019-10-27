@@ -1,5 +1,5 @@
 var hamster_data = {
-    images: ["pumpkin.png"],
+    images: ["hamster.png"],
     frames: [[2, 2, 90, 120], [92, 2, 90, 120], [182, 2, 90, 120], [272, 2, 90, 120], [362, 2, 90, 120],
                  [2, 122, 90, 120], [92, 122, 90, 120], [182, 122, 90, 120], [272, 122, 90, 120], [362, 122, 90, 120],
                  [2, 242, 90, 120], [92, 242, 90, 120], [182, 242, 90, 120], [272, 242, 90, 120], [362, 242, 90, 120],
@@ -25,8 +25,8 @@ var hamster_data = {
         "walk3": [25, 29]
     },
 
-    scaleX: .20, //90 big hamster | 5 normal critter
-    scaleY: .20, //90 big hamster | 5 normal critter
+    scaleX: .5, //90 big hamster | 5 normal critter
+    scaleY: .5, //90 big hamster | 5 normal critter
     regX: 45,
     regY: 100,
     framerate: 24,
