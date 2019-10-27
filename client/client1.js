@@ -1,5 +1,5 @@
 function Artwork(t) {
-    this.background, this.foreground, this.character = this.createCharacterSprite(t.character), t.roomPath ? this.roomPath = t.roomPath : this.roomPath = "media/rooms/", this.ring = new createjs.Shape, this.ring.graphics.f().s("#3399FF").ss(2).de(0, 0, 32, 22), this.ring.regX = 16, this.ring.regY = 11, this.shadow = new createjs.Shape, this.shadow.graphics.f("rgba(0,0,0,0.2)").s().de(0, 0, 28, 18), this.shadow.regX = 14, this.shadow.regY = 9, this.crosshair = new createjs.Shape, this.crosshair.graphics.setStrokeStyle(1).beginStroke("black").moveTo(-10, 0).lineTo(10, 0).moveTo(0, -10).lineTo(0, 10)
+    this.background, this.foreground, this.character = this.createCharacterSprite(t.character), t.roomPath ? this.roomPath = t.roomPath : this.roomPath = "media/rooms/", this.ring = new createjs.Shape, this.ring.graphics.f().s("#3399FF").ss(2).de(0, 0, 32, 22), this.ring.regX = 16, this.ring.regY = 11, this.shadow = new createjs.Shape, this.shadow.graphics.f("rgba(0,0,0,0.2)").s().de(0, 0, 28, 18), this.shadow.regX = 28, this.shadow.regY = 18, this.crosshair = new createjs.Shape, this.crosshair.graphics.setStrokeStyle(1).beginStroke("black").moveTo(-10, 0).lineTo(10, 0).moveTo(0, -10).lineTo(0, 10)
 }
 
 function calculateDistance(t, o, e, r) {
@@ -54,7 +54,7 @@ function Room(t, o, e) {
         this.room.addChild(r)
     }
     if (this.room.addChild(this.game), e.artwork && void 0 !== e.artwork.foreground) {
-        console.log("Add Foreground:", e.artwork.foreground);
+       // console.log("Add Foreground:", e.artwork.foreground);
         var a = new createjs.Bitmap(this.artwork.roomPath + e.artwork.foreground);
         this.room.addChild(a)
     }
@@ -156,13 +156,13 @@ Room.prototype.sortDepth = function() {
     }), o.on("joinRoom", function(t) {
         console.log("joinRoom", t), e.createRoom(t, !1)
     }), o.on("A", function(t) {
-        console.info("A", t), e.room.addPlayer(t)
+        console.info("Joined room: ", t), e.room.addPlayer(t)
     }), o.on("R", function(t) {
-        console.info("R", t), e.room.removePlayer(t)
+        console.info("Left room: ", t), e.room.removePlayer(t)
     }), o.on("P", function(t) {
-        console.info("P", t), e.room.movePlayer(t)
+        //console.info("P", t), e.room.movePlayer(t)
     }), o.on("M", function(t) {
-        console.info("M", t), e.room.addBalloon(t)
+        console.info(n + ": " + t), e.room.addBalloon(t)
     })
 }, World.prototype.login = function(t) {
     console.log("login", t), this.socket.open(), this.socket.emit("login", {

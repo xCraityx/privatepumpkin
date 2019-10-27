@@ -157,14 +157,16 @@ function play() {
 
 var music = document.getElementById('gamemusic');
 
-if (music.duration > 0 && !music.paused) {
+if (music.duration > 0) {
 
-    //Its playing...do your job
+    console.log('Music Playing');
 
+} else (music.duration > 17) {
+
+    console.log('Music Stopped');
+	
 } else {
-
-    music.play();
-
+	return;
 }
 </script>
 </body>
