@@ -1,5 +1,5 @@
 function Artwork(t) {
-    this.background, this.foreground, this.character = this.createCharacterSprite(t.character), t.roomPath ? this.roomPath = t.roomPath : this.roomPath = "media/rooms/", this.ring = new createjs.Shape, this.ring.graphics.f().s("#3399FF").ss(2).de(0, 0, 32, 22), this.ring.regX = 16, this.ring.regY = 11, this.shadow = new createjs.Shape, this.shadow.graphics.f("rgba(0,0,0,0.2)").s().de(0, 0, 28, 18), this.shadow.regX = 28, this.shadow.regY = 18, this.crosshair = new createjs.Shape, this.crosshair.graphics.setStrokeStyle(1).beginStroke("black").moveTo(-10, 0).lineTo(10, 0).moveTo(0, -10).lineTo(0, 10)
+    this.background, this.foreground, this.character = this.createCharacterSprite(t.character), t.roomPath ? this.roomPath = t.roomPath : this.roomPath = "media/rooms/", this.ring = new createjs.Shape, this.ring.graphics.f().s("#3399FF").ss(2).de(0, 0, 32, 22), this.ring.regX = 16, this.ring.regY = 11, this.shadow = new createjs.Shape, this.shadow.graphics.f("rgba(0,0,0,0.2)").s().de(0, 0, 28, 18), this.shadow.regX = 24, this.shadow.regY = 9, this.crosshair = new createjs.Shape, this.crosshair.graphics.setStrokeStyle(1).beginStroke("black").moveTo(-10, 0).lineTo(10, 0).moveTo(0, -10).lineTo(0, 10)
 }
 
 function calculateDistance(t, o, e, r) {
