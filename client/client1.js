@@ -105,7 +105,7 @@ Room.prototype.sortDepth = function() {
         a.x = t.x, a.y = t.y, e.balloon = a, this.balloons.addChild(a);
         var i = new createjs.Container;
         i.x = t.x, i.y = t.y;
-        var n = new createjs.Text(t.n, "12px Arial", "#000000");
+        var n = new createjs.Text(t.n + " LV 1", "12px Arial", "#000000");
         n.textAlign = "center", n.lineWidth = 100, n.y = 15, i.addChild(n), e.nickname = i, this.nicknames.addChild(i), this.stage.update(), this.playerlist[o] = e
     }
 }, Room.prototype.addBalloon = function(t) {
@@ -113,7 +113,7 @@ Room.prototype.sortDepth = function() {
         e = new createjs.Container,
         r = new createjs.Text(t.m, "12px Arial", "#000000");
     var log = document.getElementById("chatlogArea").value;
-    document.getElementById("chatlogArea").value = (t.n + " says: " + t.m + "\n" + log);
+    document.getElementById("chatlogArea").value = ("");
     //e && e.balloon.showMessage(t)
     r.textAlign = "center", r.lineWidth = 100;
     var a = r.getBounds(),
@@ -160,9 +160,9 @@ Room.prototype.sortDepth = function() {
     }), o.on("R", function(t) {
         console.info("Left room: ", t), e.room.removePlayer(t)
     }), o.on("P", function(t) {
-        return
+		e.room.movePlayer(t)
     }), o.on("M", function(t) {
-        console.info(t), e.room.addBalloon(t)
+        console.info(n + ": " + t), e.room.addBalloon(t)
     })
 }, World.prototype.login = function(t) {
     console.log("login", t), this.socket.open(), this.socket.emit("login", {
