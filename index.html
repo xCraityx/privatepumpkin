@@ -55,11 +55,6 @@
     </div>
 
 <center><div id="game" style="display:none;background-color:#EEEEEE;overflow: hidden;">
-	<div id="ui">
-		<div id="coins">
-			<center><img src="./media/ui/coins.png" style="position:absolute; left:270px; top:25px; z-index:2;"><a style="position:absolute; left:290px; top:25px; z-index:2;color:#ffe600;"><strong>100<strong></a><img/><center>
-		</div>
-	</div>
     <div class="client container hide">
         <canvas id="stage" width="850" height="480"></canvas>
         <div class="input-group">
@@ -67,7 +62,12 @@
             <span class="input-group-btn"><button class="btn btn-primary chat-btn">Yes! Send it!</button></span>
         </div>
 		<iframe id="gamemusic" src="./media/musics/plaza.mp3" allow="autoplay" allow="loop" loop="true" loop="1" style="display:none;" id="iframeAudio"></iframe> 
-	<div class="row justify-content-center chatlog" style="display:none;">
+	<div id="ui">
+		<div id="coins">
+			<center><img src="./media/ui/coins.png"><a style="color:#ffe600;"><strong>100<strong></a><img/><center>
+		</div>
+	</div>
+	    <div class="row justify-content-center chatlog" style="display:none;">
 	    <textarea id="chatlogArea" style="width: 75%;border:0;background-color: rgba(0,0,0,0);"></textarea>
 	</div>
 </div></center>
