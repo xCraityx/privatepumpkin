@@ -16,6 +16,9 @@
 	input:invalid, textarea:invalid {
 		background-color: #FFFFFF;
 	}
+	audio { 
+  		display:none;
+	}		
 </style>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -67,7 +70,7 @@
             <input id="chat-message" type="text" class="form-control" maxlength="80" placeholder="Here's a spooky message, do I need to send it?">
             <span class="input-group-btn"><button class="btn btn-primary chat-btn">Yes! Send it!</button></span>
         </div>
-		<iframe id="gamemusic" src="./media/musics/plaza.mp3" allow="autoplay" allow="loop" loop="true" loop="1" style="display:none;" id="iframeAudio"></iframe> 
+	<audio autoplay="true" loop="true" src="./media/musics/plaza.mp3">
 	    <div class="row justify-content-center chatlog" style="display:none;">
 	    <textarea id="chatlogArea" style="width: 75%;border:0;background-color: rgba(0,0,0,0);"></textarea>
 	</div>
