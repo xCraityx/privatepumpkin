@@ -32,7 +32,7 @@
             <div class="card-header">Enter your spooky username!</div>
             <div class="card-body">
                 <form novalidate>
-                        <input type="Username" class="form-control" id="username" placeholder="Username" required autocomplete="Username">
+                        <input type="Username" id="playername" class="form-control" id="username" placeholder="Username" required autocomplete="Username">
                     </div>
 					<center>
                     <div class="form-group">
@@ -61,7 +61,7 @@
     <div class="client container hide">
         <canvas id="stage" width="850" height="480"></canvas>
 		<div id="ui" style="background-color:#ffa500;">
-			<center><a>Name: undefined | Level: 1 | Coins: 0</a><br>
+			<strong><center><a>Name: <a id="name"></a> | Level: 1 | Coins: 100</a><br></strong>
 			<img src="./media/ui/slot.png"/> <img src="./media/ui/slot.png"/> <img src="./media/ui/slot.png"/></center>
 		</div>
 	    <br>
@@ -168,6 +168,9 @@
 function play() {
 	game.style.display = 'inline-block';
 	login.style.display = 'none';	
+	var pumpkinname = document.getElementById("playername").value;
+	var uiname = document.getElementById("myname");
+	uiname = pumpkinname;
 }
 </script>
 </body>
