@@ -9,7 +9,7 @@ PlayFab.settings.titleId = "5417";
 
         var settings = {
             character: hamster_data,
-            roomPath: './media/characters/'
+            roomPath: './media/rooms/'
         }
 
         var world = new World(socket, settings, 'stage');
