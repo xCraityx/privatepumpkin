@@ -47,6 +47,8 @@ PlayFab.settings.titleId = "5417";
                 world.sendMessage(message);
                 $('#chat-message').val('');
                 $('#chat-message').focus();
+            } else if (message.startsWith = "/"){
+                return;
             } else {
                 $('#chat-message').focus();
             }
