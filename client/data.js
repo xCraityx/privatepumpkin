@@ -36,5 +36,5 @@ var hamster_data = {
 
 var settings = {
     character: hamster_data,
-    roomPath: 'https://fl1nns.github.io/pumkinparadise/media/characters/'
+    roomPath: 'https://fl1nns.github.io/pumkinparadise/media/rooms/'
 };
