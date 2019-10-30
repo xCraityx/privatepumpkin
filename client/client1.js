@@ -112,8 +112,6 @@ Room.prototype.sortDepth = function() {
     var o = this.playerlist[t.i],
         e = new createjs.Container,
         r = new createjs.Text(t.m, "12px Arial", "#000000");
-    var log = document.getElementById("chatlogArea").value;
-    document.getElementById("chatlogArea").value = ("");
     //e && e.balloon.showMessage(t)
     r.textAlign = "center", r.lineWidth = 100;
     var a = r.getBounds(),
@@ -162,7 +160,7 @@ Room.prototype.sortDepth = function() {
     }), o.on("P", function(t) {
 		e.room.movePlayer(t)
     }), o.on("M", function(t) {
-       		e.room.addBalloon(t)
+       	console.info("Message: ", t), e.room.addBalloon(t)
     })
 }, World.prototype.login = function(t) {
     console.log("login", t), this.socket.open(), this.socket.emit("login", {
