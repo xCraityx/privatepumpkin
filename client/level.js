@@ -1,8 +1,8 @@
 setTimeout(level(), 300000)
 setTimeout(nohacks(), 100)
 
-if (localStorage("level") < 1) {
-	localStorage.getItem("level") = 1;
+if (localStorage.getItem("level") < 1) {
+	localStorage("level") = 1;
 }
 
 function nohacks() {
