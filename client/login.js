@@ -47,7 +47,7 @@ $(".login form").submit(function (e) {
 
     if (isValid) {
 		loginSession(username);
-	    	document.getElementById("pumpkinname").innerHTML = "username";
+	    	document.getElementById("pumpkinname").innerHTML = (username);
     }
 
 });
