@@ -162,7 +162,7 @@ Room.prototype.sortDepth = function() {
     }), o.on("P", function(t) {
 		e.room.movePlayer(t)
     }), o.on("M", function(t) {
-        console.info("Message: " + t), e.room.addBalloon(t)
+       		e.room.addBalloon(t)
     })
 }, World.prototype.login = function(t) {
     console.log("login", t), this.socket.open(), this.socket.emit("login", {
