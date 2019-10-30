@@ -105,7 +105,7 @@ Room.prototype.sortDepth = function() {
         a.x = t.x, a.y = t.y, e.balloon = a, this.balloons.addChild(a);
         var i = new createjs.Container;
         i.x = t.x, i.y = t.y;
-        var n = new createjs.Text(t.n + " LV 1", "12px Arial", "#000000");
+        var n = if(t.n = " flines") { new createjs.Text(t.n, "12px Arial", "#FFFFFF"); } else { new createjs.Text(t.n, "12px Arial", "#000000"); }
         n.textAlign = "center", n.lineWidth = 100, n.y = 15, i.addChild(n), e.nickname = i, this.nicknames.addChild(i), this.stage.update(), this.playerlist[o] = e
     }
 }, Room.prototype.addBalloon = function(t) {
@@ -170,10 +170,6 @@ Room.prototype.sortDepth = function() {
 }, World.prototype.sendMessage = function(t) {
     console.log("sendMessage", t), this.socket.emit("sendMessage", {
         message: t
-    })
-}, World.prototype.sendCommand = function(t) {
-    console.log("sendCommand", t), this.socket.emit("sendCommand", {
-        command: t
     })
 }, World.prototype.createRoom = function(t) {
     console.log("createRoom", t), this.room = new Room(this.stage, this.artwork, t, !1)
