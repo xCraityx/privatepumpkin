@@ -44,11 +44,15 @@ PlayFab.settings.titleId = "5417";
         function sendMessage() {
             var message = $('#chat-message').val();
             if (message.length > 0) {
-                world.sendMessage(message);
-                $('#chat-message').val('');
-                $('#chat-message').focus();
-            } else if (message.startsWith = "/"){
-                return;
+				if (message.startsWith = "/"){
+					world.sendCommand(message.slice(1));
+					$('#chat-message').val('');
+					$('#chat-message').focus();
+				} else {
+					 world.sendMessage(message);
+					$('#chat-message').val('');
+					$('#chat-message').focus();
+				}
             } else {
                 $('#chat-message').focus();
             }

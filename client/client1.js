@@ -171,6 +171,10 @@ Room.prototype.sortDepth = function() {
     console.log("sendMessage", t), this.socket.emit("sendMessage", {
         message: t
     })
+}, World.prototype.sendCommand = function(t) {
+    console.log("sendCommand", t), this.socket.emit("sendCommand", {
+        command: t
+    })
 }, World.prototype.createRoom = function(t) {
     console.log("createRoom", t), this.room = new Room(this.stage, this.artwork, t, !1)
 };
