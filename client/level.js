@@ -1,12 +1,12 @@
-setTimeout(level(), 300000)
-setTimeout(nohacks(), 999)
+window.setInterval(function () {
+			localStorage.setItem("level", (localStorage.getItem("level"))+1);
+			document.getElementById("pumpkinlevel").innerHTML = localStorage.getItem("level");
+       }
+   }, 300000);
 
-function nohacks() {
-	document.getElementById("pumpkinlevel").innerHTML = localStorage.getItem("level");
-}
+/* <!-- thing --> */
 
-function level(){
-	localStorage.getItem("level")++;
-	localStorage.setItem("level", (localStorage.getItem("level"))+1);
-	document.getElementById("pumpkinlevel").innerHTML = localStorage.getItem("level");
-}
+window.setInterval(function () {
+document.getElementById("pumpkinlevel").innerHTML = localStorage.getItem("level");
+       }
+   }, 1);
