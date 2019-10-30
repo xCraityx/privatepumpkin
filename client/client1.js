@@ -48,8 +48,8 @@ var dpr = window.devicePixelRatio;
 function Room(t, o, e) {
     if (this.stage = t, this.artwork = o, this.room = new createjs.Container, this.game = new createjs.Container, this.balloons = new createjs.Container, this.nicknames = new createjs.Container, this.game.addEventListener("tick", function(t) {
             t.target.children.sort(sortDepth)
-        }), e.artwork && e.artwork.sprites && (console.log(e.artwork.sprites.images[0]), e.artwork.sprites.images[0] = this.artwork.roomPath + e.artwork.sprites.images[0], this.spritesheet = new createjs.SpriteSheet(e.artwork.sprites)), this.playerlist = {}, e.artwork && void 0 !== e.artwork.background) {
-        console.log("Add Background:", e.artwork.background);
+        }), e.artwork && e.artwork.sprites && (e.artwork.sprites.images[0] = this.artwork.roomPath + e.artwork.sprites.images[0], this.spritesheet = new createjs.SpriteSheet(e.artwork.sprites)), this.playerlist = {}, e.artwork && void 0 !== e.artwork.background) {
+        console.log("Add Room Background:", e.artwork.background);
         var r = new createjs.Bitmap(this.artwork.roomPath + e.artwork.background);
         this.room.addChild(r)
     }
