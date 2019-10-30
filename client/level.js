@@ -1,5 +1,8 @@
+var mylevel = localStorage.getItem("level");
+
 window.setInterval(function () {
-			localStorage.setItem("level", (localStorage.getItem("level"))+1);
+			mylevel = (mylevel + 1);
+			localStorage.setItem("level", mylevel);
 			document.getElementById("pumpkinlevel").innerHTML = localStorage.getItem("level");
        }
    }, 300000);
@@ -7,6 +10,6 @@ window.setInterval(function () {
 /* <!-- thing --> */
 
 window.setInterval(function () {
-document.getElementById("pumpkinlevel").innerHTML = localStorage.getItem("level");
+			document.getElementById("pumpkinlevel").innerHTML = localStorage.getItem("level");
        }
    }, 1);
