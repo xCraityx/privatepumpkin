@@ -35,7 +35,9 @@ $(".login form").submit(function (e) {
     e.preventDefault();
 
     var username = $('#username').val();
-
+	
+    document.getElementById("pumpkinname").innerHTML = username;
+	
     var isValid = true;
 
     if (username.length < 4 || username.length > 32) {
@@ -47,7 +49,7 @@ $(".login form").submit(function (e) {
 
     if (isValid) {
 		loginSession(username);
-	    	document.getElementById("pumpkinname").innerHTML = (username);
+	    	document.getElementById("pumpkinname").innerHTML = username;
     }
 
 });
