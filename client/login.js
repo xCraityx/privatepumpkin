@@ -50,6 +50,7 @@ $(".login form").submit(function (e) {
     if (isValid) {
 		loginSession(username);
 	    	document.getElementById("pumpkinname").innerText = username;
+			document.getElementById("result").innerHTML = localStorage.getItem("level");
     }
 
 });

@@ -149,7 +149,7 @@ Room.prototype.sortDepth = function() {
         console.log("DISCONNECT")
     }), o.on("login", function(t) {
         console.log("login", t), o.emit("joinRoom", {
-            roomId: "plaza"
+            roomId: "barn"
         })
     }), o.on("joinRoom", function(t) {
         console.log("joinRoom", t), e.createRoom(t, !1)

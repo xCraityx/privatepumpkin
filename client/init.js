@@ -1,15 +1,15 @@
 PlayFab.settings.titleId = "5417";
 
-        var socket = io('https://pumpkin-server.herokuapp.com/', { //wss://boxcritters.org   https://boxcritters.herokuapp.com
+        var socket = io('https://pumpkin-server.herokuapp.com/', {
             autoConnect: false,
             transports: ['websocket']
         });
 
-        hamster_data.images = ['./media/critters/hamster.png'];
+        hamster_data.images = ['./media/characters/pumpkin.png'];
 
         var settings = {
             character: hamster_data,
-            roomPath: './media/rooms/'
+            roomPath: './media/characters/'
         }
 
         var world = new World(socket, settings, 'stage');
