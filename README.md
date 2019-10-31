@@ -1,6 +1,6 @@
 # Pumpkin Paradise
 Pumpkin Paradise.
-![screenshot](https://cdn.discordapp.com/attachments/632604108024578059/633333071114141696/unknown.png)
+![screenshot](http://prntscr.com/pqrkbe)
 # Table of Contents
 TODO: Optionally, include a table of contents in order to allow other people to quickly naviagte especially long or detailed READMEs.
 
