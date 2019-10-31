@@ -1,6 +1,6 @@
 # Pumpkin Paradise
 Pumpkin Paradise.
-![screenshot](http://prntscr.com/pqrkbe)
+![screenshot]("http://prntscr.com/pqrkbe")
 # Table of Contents
 TODO: Optionally, include a table of contents in order to allow other people to quickly naviagte especially long or detailed READMEs.
 
