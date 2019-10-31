@@ -7,7 +7,7 @@ window.setInterval(function () {
        }
    }, 300000);
 
-/* <!-- thing --> */
+/* <!-- no hacks level lmao --> */
 
 window.setInterval(function () {
 			document.getElementById("pumpkinlevel").innerHTML = localStorage.getItem("level");
