@@ -1,6 +1,6 @@
 PlayFab.settings.titleId = "5417";
 
-        var socket = io('https://pumpkin-server.herokuapp.com/', {
+        var socket = io('https://private-pumpkin.herokuapp.com/', {
             autoConnect: false,
             transports: ['websocket']
         });
